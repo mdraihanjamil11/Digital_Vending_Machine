@@ -14,19 +14,19 @@ int main()
     }
 
     int choice;
-    printf("Enter the number of the item you want to purchase: ");
+    printf("Enter the number of the product you want to purchase: ");
     scanf("%d", &choice);
 
     if (choice < 1 || choice > 10)
     {
         printf("Invalid choice!\n");
-        printf("Please select the items from given menu.\n");
+        printf("Please select the products from given menu.\n");
         return 1;
     }
 
     int total_cost = prices[choice - 1];
 
-    printf("Total cost (+%%vat): (tk) %d\n", total_cost);
+    printf("Total cost (+.05%%vat): (tk) %d\n", total_cost);
 
     int paid;
     printf("Enter amount paid: (tk) ");
